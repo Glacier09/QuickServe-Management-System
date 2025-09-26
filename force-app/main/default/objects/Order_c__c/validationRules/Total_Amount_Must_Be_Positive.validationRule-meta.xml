@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Amount_Must_Be_Positive</fullName>
+    <active>true</active>
+    <errorConditionFormula>Total_Amount_c__c &lt;= 0</errorConditionFormula>
+    <errorDisplayField>Total_Amount_c__c</errorDisplayField>
+    <errorMessage>The Total Amount must be greater than zero.</errorMessage>
+</ValidationRule>

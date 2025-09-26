@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Loyalty Points" icon-name="custom:custom14">
+        <div class="slds-p-around_medium">
+            <template if:true={loyaltyProgram.data}>
+                <p class="slds-text-heading_large slds-align_absolute-center">
+                    {loyaltyProgram.data.Points_Balance_c__c}
+                </p>
+            </template>
+            <template if:false={loyaltyProgram.data}>
+                <p>No loyalty program found for this customer.</p>
+            </template>
+            <template if:true={loyaltyProgram.error}>
+                <p>There was an error loading the loyalty points.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
